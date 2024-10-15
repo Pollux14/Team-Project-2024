@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shopping Cart - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+
+
+
+<style>
+    .remove{
+        transition: 0.5s;
+    }
+    .remove:hover{
+        color:#e01b01;
+        font-size: 15px;
+    }
+</style>
+
+
+</head>
+<body>
+
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/solo-logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+        <img src="images/menu.png"  class="menu-icon" alt="menu"
+        onclick="menutoggle()">
+    </div>
+</div>
+
+
+<!-- Cart Items Details-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/journal1-keychain.webp" alt="">
+                    <div>
+                        <p>Gravity Falls - Journal 1 Keychain</p>
+                        <small> Price: $9.99</small><br>
+                        <a href="" class="remove">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1" name="" id="" min="0"></td>
+            <td>$9.99</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/funkopop-dipper.webp" alt="">
+                    <div>
+                        <p>Gravity Falls - Dipper Pines Funkopop</p>
+                        <small> Price: $30.00</small><br>
+                        <a href="" class="remove">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1" name="" id="" min="0"></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/plushy-freddy.webp" alt="">
+                    <div>
+                        <p>Five Night's At Freddy - Freddy Plush</p>
+                        <small> Price: $15.00</small><br>
+                        <a href="" class="remove">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><input type="number" value="1" name="" id="" min="0"></td>
+            <td>$15.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$54.99</td>
+            </tr>
+            <tr>
+                <td>Tax (10%)</td>
+                <td>$5.49</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$60.48</td>
+            </tr>
+        </table>
+       
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!------- Footer ------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/solo-logo.png" alt="">
+                <p>Where Memories Meet Merchandise<br>Bringing Your Favorite Characters to Life!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ol>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ol>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - President University</p>
+    </div>
+</div>
+
+
+<!------- JS for toggle menu ------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+
+    MenuItems.style.maxHeight = "0 px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0 px"){
+            MenuItems.style.maxHeight = "200 px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0 px";
+        }
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>
